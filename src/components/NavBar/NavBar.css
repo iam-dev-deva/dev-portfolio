@@ -1,0 +1,61 @@
+@import url('../../colors.css');
+
+nav{
+    width:100%;
+    color: var(--default-color);
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    transition: all 0.3s ease-in-out 0s;
+}
+.logo{
+    width: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 18px;
+    font-family: var(--nav-font);
+    position: relative;
+    cursor: pointer;
+}
+
+ ul .nav-item::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: -5px;
+    bottom: -5px;
+    width: 0px;
+    background-color: var(--accent-color);
+    transition: width .5s;
+}
+ ul .nav-item:hover::after{
+    width: 80%;
+}
+ul .nav-item:hover{
+    color: var(--hover-color);
+}
+.dark-nav{
+    background: var(--contrast-color);
+    transition: 0.5s;
+}
+.active{
+    color: var(--accent-color);
+}
+.active::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: -5px;
+    bottom: -5px;
+    width: 80%;
+    background-color: var(--accent-color);
+    /* transition: width .5s; */
+}

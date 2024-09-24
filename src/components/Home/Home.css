@@ -1,0 +1,34 @@
+@import url('../../colors.css');
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.7),var(--accent-color)), url('../../assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+.home-text{
+    text-align:left;
+    max-width: 800px;
+    padding: 30px;
+}
+
+.home-text h1{
+    font-size: 80px;
+    font-weight: 600;
+}
+.home-text p{
+    font-size: 30px;
+}
+.home-parah{
+    color: var(--default-color);
+    font-weight: 600;
+}
+.home-parah .typed{
+    color: var(--contrast-color);
+    border-bottom: 3px var(--contrast-color) solid;
+}
