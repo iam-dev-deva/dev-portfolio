@@ -17,10 +17,10 @@ const Home = () => {
                 <h1>Devaraj</h1>
                 <p className='home-parah'>I'm <span class="typed">{text}</span><Cursor /><span></span></p>
                 <div class="social-links">
-                    <a className='skype' href="#"><FaSkype /></a>
-                    <a className='email' href="#"><MdEmail /></a>
-                    <a className='git' href="#"><FaGithub /></a>
-                    <a className='linkedin' href="#"><FaLinkedin /></a>
+                    <a className='skype' target='blank' href="https://join.skype.com/invite/qlUM32TuforC"><FaSkype /></a>
+                    <a className='email' target='blank' href="mailto:deva.arcee@gmail.com"><MdEmail /></a>
+                    <a className='git' target='blank' href="https://github.com/iam-dev-deva"><FaGithub /></a>
+                    <a className='linkedin' target='blank' href="https://www.linkedin.com/in/devaraj-selvam/"><FaLinkedin /></a>
                 </div>
             </div>
 
