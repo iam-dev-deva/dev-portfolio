@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './NavBar.css'
-import logo from '../../assets/logo.png'
+import logo from '../../../public/logo.png'
 
 const NavBar = () => {
 
@@ -14,8 +14,8 @@ const NavBar = () => {
 
   return (
     <nav className={`container  ${sticky? `dark-nav` : ''}`} >
-        {/* <img className='logo' src={logo} alt="" /> */}
-        <span className='logo'>Portfolio</span>
+        <img className='logo' src={logo} alt="" />
+        {/* <span className='logo'>Portfolio</span> */}
         <ul>
             <li class="active">Home</li>
             <li className='nav-item'>About</li>
