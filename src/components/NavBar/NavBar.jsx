@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './NavBar.css'
-import logo from '../../../public/logo.png'
-import {Link} from 'react-router-dom';
+import logo from '../../assets/logo.png'
+import {NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -18,12 +18,12 @@ const NavBar = () => {
         <img className='logo' src={logo} alt="" />
         {/* <span className='logo'>Portfolio</span> */}
         <ul>
-            <li className="nav-item"> <Link to='/'>Home</Link></li>
-            <li className='nav-item'><Link to='/about'>About</Link></li>
-            <li className='nav-item'><Link to='/resume'>Resume</Link></li>
-            <li className='nav-item'><Link to='/services'>Services</Link></li>
-            <li className='nav-item'><Link to='/project'>Projects</Link></li>
-            <li><button className='btn'><Link to='/contact'>Contact</Link></button></li>
+            <li className="nav-item"> <NavLink activeclassname="active" to='/'>Home</NavLink ></li>
+            <li className='nav-item'><NavLink activeclassname="active" to='/about' >About</NavLink ></li>
+            <li className='nav-item'><NavLink activeclassname="active" to='/resume'>Resume</NavLink ></li>
+            <li className='nav-item'><NavLink activeclassname="active" to='/services'>Services</NavLink ></li>
+            <li className='nav-item'><NavLink activeclassname="active" to='/project'>Projects</NavLink ></li>
+            <li><button className='btn'><NavLink  to='/contact'>Contact</NavLink ></button></li>
         </ul>
     </nav>
   )

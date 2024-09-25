@@ -41,3 +41,9 @@ a{
     background-color: var(--surface-color);
     color:var(--default-color);
 }
+.top-content{
+        color: aliceblue;
+        margin: 100PX 10PX;
+        justify-content: center ;
+        text-align: center;
+}
