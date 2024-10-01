@@ -42,7 +42,7 @@ a{
     color:var(--default-color);
 }
 .top-content{
-        color: aliceblue;
+        color: var(--default-color);
         margin: 100PX 10PX;
         justify-content: center ;
         text-align: center;

@@ -1,18 +1,16 @@
 @import url('../../colors.css');
 
-.bio-sector{
-    color:var(--heading-color);
-    display: flex;
-    max-width: 100%;
-    height: 300px;
-}
 
 .bio-image img{
-width: 100%;
-height: 450px;
+max-width: 70%;
+justify-content: center;
+margin-bottom: 20px;
+overflow: clip;
+vertical-align: middle;
+position: static;
 }
 .bio-data-rows {
-    display: flex;
+    display: inline;
     flex-direction:row;
 }
 .row-data li{
@@ -21,4 +19,38 @@ height: 450px;
 .row-data li svg{
     color: var(--accent-color);
     font-size: 25px;
+    margin-right: 5px;
+    line-height: 0;
 }
+.about{
+    margin: 10px 10px;
+    display: flex;
+    padding: 20px 20px;
+    
+    
+}
+.about .content h1 {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px 20px;
+    margin: 20px 20px;
+  }
+  
+  .about .content ul {
+    padding: 20px 20px;
+    margin: 20px 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul b {
+    
+    margin-right: 10px;
+  }
+  
