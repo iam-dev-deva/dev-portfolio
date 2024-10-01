@@ -1,0 +1,24 @@
+@import url('../../colors.css');
+
+.bio-sector{
+    color:var(--heading-color);
+    display: flex;
+    max-width: 100%;
+    height: 300px;
+}
+
+.bio-image img{
+width: 100%;
+height: 450px;
+}
+.bio-data-rows {
+    display: flex;
+    flex-direction:row;
+}
+.row-data li{
+    list-style: none;
+}
+.row-data li svg{
+    color: var(--accent-color);
+    font-size: 25px;
+}
