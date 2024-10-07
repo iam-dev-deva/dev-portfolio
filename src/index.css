@@ -18,6 +18,7 @@ a{
 .container{
     padding-left: 5%;
     padding-right: 5%;
+    color: var(--default-color);
 }
 .btn{
     background: var(--accent-color);
@@ -47,3 +48,32 @@ a{
         justify-content: center ;
         text-align: center;
 }
+.ScrollToTop{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    justify-content: center;
+    align-items: center;
+    bottom: -15px;
+    display: flex;
+    font-size: 15px;
+}
+.active-btn{
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+    cursor: pointer;
+}
+.ScrollToTop:hover{
+    opacity: 0.8;
+    color: var(--default-color);
+}
+

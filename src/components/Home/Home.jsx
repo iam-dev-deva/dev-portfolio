@@ -3,9 +3,11 @@ import './Home.css'
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FaLinkedin, FaGithub, FaSkype, } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
-import Footer from '../Footer/Footer';
+// import Footer from '../Footer/Footer';
+import aos from 'aos';
 
 const Home = () => {
+    aos.init();
     const [text] = useTypewriter({
         words: ['Developer', 'Photographer', 'Editor', 'Travler'],
         loop: 0,
@@ -15,7 +17,7 @@ const Home = () => {
     return (
         <div>
         <div className='home container'>
-            <div className='home-text'>
+            <div className='home-text' data-aos='slide-right' data-aos-duration='1000'>
                 <h1>Devaraj</h1>
                 <p className='home-parah'>I'm <span className="typed">{text}</span><Cursor /><span></span></p>
                 <div className="social-links">

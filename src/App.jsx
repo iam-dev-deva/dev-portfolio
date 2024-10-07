@@ -9,6 +9,7 @@ import Resume from './components/Resume/Resume'
 import Services from './components/Services/Services'
 import {BrowserRouter as Router,Routes,Route,} from "react-router-dom";
 import './index.css'
+import ScrollToTop from './ScrollToTop'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <div>
       <Router>
             <NavBar />
+            <ScrollToTop />
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/about"  element={<About />} />
