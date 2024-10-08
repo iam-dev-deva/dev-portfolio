@@ -1,4 +1,4 @@
-@import url('../../colors.css');
+@import url("../../colors.css");
 
 .top-content {
   text-align: center;
@@ -124,8 +124,7 @@ p {
   margin: 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color:
-    color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
   position: relative;
 }
 
@@ -193,6 +192,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 .skills-data {
@@ -201,11 +201,23 @@ p {
   margin: 15px 15px;
   padding: 15px 15px;
   text-align: center;
-  background: var(--surface-color);
+  /* background: var(--surface-color); */
   /* border-radius: 50px; */
+  /* animation: 3s linear; */
+  /* transition: all 4s; */
+
 }
 
 .skills-data svg {
   height: 100px;
   width: 100px;
+  transition: all 1s;
 }
+
+.skills-data:hover svg{
+
+   /* color: #111; */
+   background:var(--default-color);
+   box-shadow: 0 0 100px;
+}
+

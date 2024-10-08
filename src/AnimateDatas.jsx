@@ -1,5 +1,6 @@
 import { animated, useSpring } from 'react-spring';
 import CountUp from 'react-countup';
+import React from 'react';
 
 const CountUpWrapper = ({ start, end, delay, countUpRef }) => {
     return (
@@ -28,13 +29,32 @@ const AnimatedFill = ({ width, triggerAnimation, title }) => {
         </div>
     );
 };
-const IconWithText = ({ icon: Icon, skillName, color }) => {
+// const IconWithText = ({ icon: Icon, skillName, color }) => {
+//     return (
+//         <div className="skills-data">
+//             <Icon style={{ color }} />
+//             <span>{skillName}</span>
+//         </div>
+//     );
+// };
+const IconWithText = ({ icon: Icon, skillName, color, hoverColor }) => {
+    const [isHovered, setIsHovered] = React.useState(false);
+  
+    const handleMouseEnter = () => {
+      setIsHovered(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setIsHovered(false);
+    };
+  
     return (
-        <div className="skills-data">
-            <Icon style={{ color }} />
-            <span>{skillName}</span>
-        </div>
+      <div className="skills-data"   
+   onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <Icon style={{ color: isHovered ? hoverColor : color }} />
+        <span>{skillName}</span>
+      </div>
     );
-};
+  };
 
 export { AnimatedFill, CountUpWrapper, IconWithText };
