@@ -1,21 +1,58 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './About.css'
-import { BiChevronRight, BiFile } from 'react-icons/bi'
+import { BiChevronRight, BiFile, BiLogoTailwindCss } from 'react-icons/bi'
 import profile_img from '../../assets/profile-img.jpg'
 import { GoProject } from 'react-icons/go'
 import { GiSuitcase } from 'react-icons/gi'
 import { CgCode } from 'react-icons/cg'
-import CountUp from 'react-countup';
 import aos from 'aos';
 import 'aos/dist/aos.css';
+import { AnimatedFill, CountUpWrapper, IconWithText } from '../../AnimateDatas';
+import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
+import { DiPhotoshop, DiPostgresql } from 'react-icons/di';
+import { BsFileWord } from 'react-icons/bs';
+import { SiAdobelightroom, SiMysql, SiPostman, SiServerless, SiSwagger } from 'react-icons/si';
+import { FaPhp } from 'react-icons/fa6';
+
+const skills = [
+  { icon: FaHtml5, name: 'HTML' ,color:'orangered' },
+  { icon: FaCss3Alt, name: 'CSS' ,color:'dodgerblue' },
+  { icon: FaJsSquare, name: 'JavaScript' ,color:'gold' },
+  { icon: FaNodeJs, name: 'NodeJS' ,color:'darkgreen' },
+  { icon: FaReact, name: 'React' ,color:'skyblue' },
+  { icon: FaGithub, name: 'GitHub' ,color:'purple' },
+  { icon: DiPhotoshop, name: 'PhotoShop' ,color:'deepskyblue' },
+  { icon: BsFileWord, name: 'Word' ,color:'royalblue' },
+  { icon: FaBootstrap, name: 'BootStrap' ,color:'blueviolet' },
+  { icon: BiLogoTailwindCss, name: 'Tailwind' ,color:'cyan' },
+  { icon: FaPython, name: 'Python' ,color:'blue' },
+  { icon: SiAdobelightroom, name: 'LightRoom' ,color:'blue' },
+  { icon: FaPhp, name: 'PHP' ,color:'blue' },
+  { icon: SiMysql, name: 'MySQL' ,color:'blue' },
+  { icon: DiPostgresql, name: 'Postgresql' ,color:'blue' },
+  { icon: SiServerless, name: 'Serverless' ,color:'blue' },
+  { icon: SiSwagger, name: 'Swagger' ,color:'blue' },
+  { icon: SiPostman, name: 'PostMan' ,color:'blue' },
+];
 
 const About = () => {
-  <CountUp start={0} end={100} delay={0} enableScrollSpy= {true}>
-    {({ countUpRef }) => (
-      <span ref={countUpRef} />
-    )}
-  </CountUp>
   aos.init()
+  const [animateSkills, setAnimateSkills] = useState(false);
+  useEffect(() => {
+
+    const handleScroll = () => {
+      const skillsSection = document.querySelector('.skills');
+      if (skillsSection && skillsSection.classList.contains('aos-animate')) {
+        setAnimateSkills(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className='container'>
       <div className='top-content' data-aos='fade-in' data-aos-duration='1000'>
@@ -23,68 +60,115 @@ const About = () => {
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa qui, consequuntur eius dolorem dolores animi. Natus similique,
           fugit ullam quaerat at maiores id minima neque totam nam doloremque quia incidunt.</p>
       </div>
-      <div className="about" data-aos='fade-up' data-aos-duration='1000'>
-        <div className="bio-image">
-          <img src={profile_img} alt="" />
-        </div>
-        <div className="content">
-          <div className='bio-data-heading'>
-            <h2>Backend & Web Developer</h2>
-            <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+      <section className="bio-data-section">
+        <div className="about" data-aos='fade-up' data-aos-duration='1000'>
+          <div className="bio-image">
+            <img src={profile_img} alt="" />
           </div>
-          <div className="bio-data-rows">
-            <div className="row">
-              <ul className="row-data">
-                <li><BiChevronRight /><b>BirthDay: </b><span>1 April 2000</span></li>
-                <li><BiChevronRight /><b>Website:</b><span> www.example.com</span></li>
-                <li><BiChevronRight /><b>Phone:</b><span> 1234567890</span></li>
-              </ul>
+          <div className="content">
+            <div className='bio-data-heading'>
+              <h2>Backend & Web Developer</h2>
+              <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div className="row">
-              <ul className="row-data">
-                <li><BiChevronRight /><b>Age: </b> <span>20</span></li>
-                <li><BiChevronRight /><b>Degree:</b><span> Karur</span></li>
-                <li><BiChevronRight /><b>Email:</b> <span>example@example.com</span></li>
-              </ul>
+            <div className="bio-data-rows">
+              <div className="row">
+                <ul className="row-data">
+                  <li><BiChevronRight /><b>BirthDay: </b><span>1 April 2000</span></li>
+                  <li><BiChevronRight /><b>Website:</b><span> deva.arcee@gmail.com</span></li>
+                  <li><BiChevronRight /><b>Phone:</b><span> 9858500932</span></li>
+                </ul>
+              </div>
+              <div className="row">
+                <ul className="row-data">
+                  <li><BiChevronRight /><b>Age: </b> <span>20</span></li>
+                  <li><BiChevronRight /><b>Degree:</b><span> MCA</span></li>
+                  <li><BiChevronRight /><b>Email:</b> <span>example@example.com</span></li>
+                </ul>
+              </div>
+              <p className='py-3'>
+                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut.
+                Nulla accusantium dolor incidunt officia tempore.Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia.
+                Sed et consectetur qui quia repellendus itaque neque.
+              </p>
             </div>
-            <p className='py-3'>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut.
-              Nulla accusantium dolor incidunt officia tempore.Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia.
-              Sed et consectetur qui quia repellendus itaque neque.
-            </p>
           </div>
         </div>
-      </div>
-      <div className="stats" data-aos='fade-up' data-aos-duration='1200'>
-        <div className="stat">
-          <span className='stat-icon'><GoProject /></span>
-          <div className="item">
-            <h2><CountUp start={0} end={5} delay={0} enableScrollSpy= {true} /></h2>
-            <span>Projects Done</span>
+      </section>
+
+      <section className="stats-section">
+        <div className="stats" data-aos='fade-up' data-aos-duration='1200'>
+          <div className="stat">
+            <span className='stat-icon'><GoProject /></span>
+            <div className="item">
+              <h2><CountUpWrapper start={0} end={5} delay={0} enableScrollSpy={true} /></h2>
+              <span>Projects Done</span>
+            </div>
+          </div>
+          <div className="stat">
+            <span className='stat-icon'><BiFile /></span>
+            <div className="item">
+              <h2><CountUpWrapper start={0} end={220} delay={0} enableScrollSpy={true} /></h2>
+              <span>Files Committed</span>
+            </div>
+          </div>
+          <div className="stat">
+            <span className='stat-icon'><GiSuitcase /></span>
+            <div className="item">
+              <h2><CountUpWrapper start={0} end={2} delay={0} enableScrollSpy={true} /></h2>
+              <span>Years of Experience</span>
+            </div>
+          </div>
+          <div className="stat">
+            <span className='stat-icon'><CgCode /></span>
+            <div className="item">
+              <h2><CountUpWrapper start={0} end={10} delay={0} enableScrollSpy={true} /></h2>
+              <span>Language Worked</span>
+            </div>
           </div>
         </div>
-        <div className="stat">
-          <span className='stat-icon'><BiFile /></span>
-          <div className="item">
-            <h2><CountUp start={0} end={220} delay={0} enableScrollSpy= {true} /></h2>
-            <span>Files Committed</span>
+      </section>
+
+      <section className='skills-section'>
+        <div className="container">
+          <div className="section-title" data-aos='fade-right' data-aos-duration='1000'>
+            <h2>Features</h2>
+            <div><span>I'm</span> <span className="description-title">interested in</span></div>
+          </div>
+          <div className="skills" data-aos='fade-left' data-aos-duration='1000'>
+            <div className='skill-row'>
+              <div className="skill">
+                <AnimatedFill title="Frontend" width="30%" triggerAnimation={animateSkills} />
+              </div>
+              <div className="skill">
+                <AnimatedFill title="Backend" width="80%" triggerAnimation={animateSkills} />
+              </div>
+            </div>
+            <div className='skill-row'>
+              <div className="skill">
+                <AnimatedFill title="Designing" width="40%" triggerAnimation={animateSkills} />
+              </div>
+              <div className="skill">
+                <AnimatedFill title="Photography" width="70%" triggerAnimation={animateSkills} />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="stat">
-          <span className='stat-icon'><GiSuitcase /></span>
-          <div className="item">
-            <h2><CountUp start={0} end={2} delay={0} enableScrollSpy= {true} /></h2>
-            <span>Years of Experience</span>
+      </section>
+
+      <section className='skill-icon-section'>
+        <div className="container">
+          <div className="section-title">
+            <h2>Skills</h2>
+            <div><span>My</span> <span className="description-title">Skills</span></div>
+          </div>
+          <div className="skills-list">
+            {skills.map((skill, index) => (
+              <IconWithText key={index} icon={skill.icon} skillName={skill.name} color={skill.color} />
+            ))}
           </div>
         </div>
-        <div className="stat">
-          <span className='stat-icon'><CgCode /></span>
-          <div className="item">
-            <h2><CountUp start={0} end={10} delay={0} enableScrollSpy= {true} /></h2>
-            <span>Language Worked</span>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   )
 }
