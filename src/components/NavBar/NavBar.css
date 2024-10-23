@@ -43,7 +43,7 @@ ul .nav-item:hover{
     color: var(--hover-color);
 }
 .dark-nav{
-    background: rgba(0, 0, 0, 0.651);
+    background: rgba(0, 0, 0, 0.703);
     transition: 0.5s;
 }
 .nav-item .active{

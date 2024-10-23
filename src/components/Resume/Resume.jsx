@@ -1,15 +1,18 @@
 import React from 'react'
 import './Resume.css';
+import aos from "aos";
+import "aos/dist/aos.css";
 
 const Resume = () => {
+  aos.init();
   return (
-    <div className='container top-content'>
+    <div className='container top-content' data-aos="fade-in" data-aos-duration="1000">
       <h1>Resume</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis nam perferendis adipisci maiores non similique optio autem minus suscipit
         , ab rem ullam quaerat, nisi itaque vel ad sunt voluptate.</p>
       <div className='resume container'>
         <div className="rows">
-          <div className="column">
+          <div className="column" data-aos="fade-up" data-aos-duration="1000">
             <h2>Summary</h2>
             <div className="column-data">
               <h3 className="column-title">Deva</h3>
@@ -25,29 +28,29 @@ const Resume = () => {
             </div>
           </div>
 
-          <div className="column">
+          <div className="column" data-aos="fade-up" data-aos-duration="1200">
             <h2>Education</h2>
             <div className="column-data">
-              <h3 className="column-title">MCA</h3>
+              <h3 className="column-title">Master of Computer Applications</h3>
               <h4 className='column-sub'>2022 - 2024</h4>
               <span className='column-sub'>
-                arts and sciend collage
-              </span><br />
+              Alagappa University
+              </span><br/><br />
               <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aspernatur accusantium, eaque labore consequatur minima necessitatibus? Minima, a libero modi deleniti, ipsa, consectetur esse voluptate corporis velit officiis fugit quos?</span>
             </div>
             <div className="column-data">
-              <h3 className="column-title">BCA</h3>
+              <h3 className="column-title">Bachelor of Computer Applications</h3>
               <h4 className='column-sub'> 2019 - 2022</h4>
               <span className='column-sub'>
-                arts and sciend collage
-              </span><br />
+                Bharathidasan University
+              </span><br/><br />
               <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, in earum, eos perferendis sint, beatae reprehenderit ullam alias inventore quibusdam recusandae sed? Facere necessitatibus repellendus vero doloremque, assumenda odio molestiae.</span>
             </div>
           </div>
         </div>
 
         <div className="rows">
-          <div className="column">
+          <div className="column" data-aos="fade-up" data-aos-duration="1100">
             <h2 >Professional Experience</h2>
             <div className="column-data">
               <h2 className="column-title">Backend Developer</h2>
