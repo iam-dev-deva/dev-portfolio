@@ -17,7 +17,7 @@ const Projects = () => {
         soluta. Amet!
       </p>
       <div className="projects-section" data-aos="fade-up" data-aos-duration="1000">
-        <div className="projects-item">
+        <div className="projects-item" data-aos="fade-up" data-aos-duration="1000">
           <h4>Project 1</h4>
           <img className="project-thum" src={project_img} alt="project" />
           <div className="item-center">
@@ -25,7 +25,7 @@ const Projects = () => {
           </div>
           <span>Photography Showcase Site</span>
         </div>
-        <div className="projects-item">
+        <div className="projects-item" data-aos="fade-up" data-aos-duration="1000">
           <h4>Project 2</h4>
           <img className="project-thum" src={project_img} alt="project" />
           <div className="item-center">
@@ -33,7 +33,7 @@ const Projects = () => {
           </div>
           <span>Personal Portfolio Website</span>
         </div>
-        <div className="projects-item">
+        <div className="projects-item" data-aos="fade-up" data-aos-duration="1000">
           <h4>Project 3</h4>
           <img className="project-thum" src={project_img} alt="project" />
           <div className="item-center">
@@ -41,7 +41,7 @@ const Projects = () => {
           </div>
           <span>Site is Under Development</span>
         </div>
-        <div className="projects-item">
+        <div className="projects-item" data-aos="fade-up" data-aos-duration="1000">
           <h4>Project 4</h4>
           <img className="project-thum" src={project_img} alt="project" />
           <div className="item-center">
@@ -49,7 +49,7 @@ const Projects = () => {
           </div>
           <span>Site is Under Development</span>
         </div>
-        <div className="projects-item">
+        <div className="projects-item" data-aos="fade-up" data-aos-duration="1000">
           <h4>Project 5</h4>
           <img className="project-thum" src={project_img} alt="project" />
           <div className="item-center">
@@ -57,7 +57,7 @@ const Projects = () => {
           </div>
           <span>Site is Under Development</span>
         </div>
-        <div className="projects-item">
+        <div className="projects-item" data-aos="fade-up" data-aos-duration="1000">
           <h4>Project 6</h4>
           <img className="project-thum" src={project_img} alt="project" />
           <div className="item-center">

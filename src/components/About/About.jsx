@@ -8,25 +8,10 @@ import { CgCode } from "react-icons/cg";
 import aos from "aos";
 import "aos/dist/aos.css";
 import { AnimatedFill, CountUpWrapper, IconWithText } from "../../AnimateDatas";
-import {
-  FaBootstrap,
-  FaCss3Alt,
-  FaGithub,
-  FaHtml5,
-  FaJsSquare,
-  FaNodeJs,
-  FaPython,
-  FaReact,
-} from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaPython, FaReact, } from "react-icons/fa";
 import { DiPhotoshop, DiPostgresql } from "react-icons/di";
 import { BsFileWord } from "react-icons/bs";
-import {
-  SiAdobelightroom,
-  SiMysql,
-  SiPostman,
-  SiServerless,
-  SiSwagger,
-} from "react-icons/si";
+import { SiAdobelightroom, SiMysql, SiPostman, SiServerless, SiSwagger, } from "react-icons/si";
 import { FaPhp } from "react-icons/fa6";
 
 const skills = [

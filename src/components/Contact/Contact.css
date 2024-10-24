@@ -1,1 +1,136 @@
 @import url('../../colors.css');
+
+.contact-section {
+    margin: 35px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section .contact-item {
+    margin: 15px 15px;
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.contact-logo {
+    color: black;
+    height: 54px;
+    width: 54px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 30px;
+    text-align: center;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+.contact-info {
+    text-align: left;
+    padding: 10px;
+}
+
+.contact-info span {
+    font-size: 15px;
+}
+
+.contact-info h4 {
+    font-size: 20px;
+}
+
+.social {
+    margin: 5px 0px;
+    font-size: 25px;
+    float: left;
+}
+
+.social svg {
+    margin: 0 10px 0 0;
+    color: gray;
+    font-size: 25px;
+}
+
+.social svg:hover {
+    color: var(--accent-color);
+    transition: .3s;
+}
+
+.contact-form {
+    /* display: flex; */
+    justify-content: center;
+    margin: 35px 0 0 0;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group input {
+    color: var(--default-color);
+    display: flex;
+    padding: 10px 15px;
+    width: 48%;
+    margin: 15px 10px;
+    background: var(--contrast-color);
+    font-size: 15px;
+    border-radius: 0;
+    border: 1px solid var(--surface-color);
+}
+
+.form-group #subject {
+    width: 100%;
+}
+
+.form-group input:focus {
+    border-radius: 0;
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+
+/* .form-group input[type=email] {
+    float: right;
+} */
+
+.form-group textarea {
+    color: var(--default-color);
+    padding: 10px 15px;
+    width: 100%;
+    margin: 10px;
+    background: var(--contrast-color);
+    font-size: 15px;
+    border-radius: 0;
+    border: 1px solid var(--surface-color);
+    height: 150px;
+    /* Explicitly set height */
+    resize: vertical;
+    /* Allow user to resize vertically */
+}
+
+.form-group textarea:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+
+.form-group .btn {
+    background: var(--accent-color);
+    width: 15%;
+    border-radius: 20px;
+    font-size: 15px; 
+    border: 1px solid var(--accent-color);
+}
+.form-group .btn:hover {
+    /* color: var(--contrast-color); */
+    background: var(--contrast-color);
+    transition: .3s;
+    border: 1px solid var(--accent-color);
+}
+/* .contact-form .result{
+
+} */
