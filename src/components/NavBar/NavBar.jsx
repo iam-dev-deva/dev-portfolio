@@ -26,7 +26,7 @@ const NavBar = () => {
             <li className='nav-item'><NavLink activeclassname="active" to='/about' >About</NavLink ></li>
             <li className='nav-item'><NavLink activeclassname="active" to='/resume'>Resume</NavLink ></li>
             <li className='nav-item'><NavLink activeclassname="active" to='/project'>Projects</NavLink ></li>
-            <li className={mobileMenu?'nav-item':'btn'}><NavLink  to='/contact'>Contact</NavLink ></li>
+            <li className='nav-item'><NavLink  to='/contact'>Contact</NavLink ></li>
         </ul>
       <GiHamburgerMenu  className='menu-icon' onClick={toggleMenu} />
 

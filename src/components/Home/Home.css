@@ -1,42 +1,48 @@
 @import url('../../colors.css');
 
-.home{
+.home {
     width: 100%;
     min-height: 100vh;
-    background:linear-gradient(rgba(0, 0, 0, 0.7),var(--accent-color)), url('../../assets/hero-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), var(--accent-color)), url('../../assets/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     display: flex;
     align-items: center;
-    justify-content:left;
+    justify-content: left;
 }
-.home-text{
-    text-align:left;
+
+.home-text {
+    text-align: left;
     max-width: 800px;
     padding: 30px;
 }
 
-.home-text h1{
+.home-text h1 {
     font-size: 80px;
     font-weight: 600;
 }
-.home-text p{
+
+.home-text p {
     font-size: 30px;
 }
-.home-parah{
+
+.home-parah {
     color: var(--default-color);
     font-weight: 600;
 }
-.home-parah .typed{
+
+.home-parah .typed {
     color: var(--contrast-color);
     border-bottom: 3px var(--contrast-color) solid;
 }
-.social-links{
+
+.social-links {
     display: flex;
     margin-top: 25px;
 }
-.social-links a{
+
+.social-links a {
     background-color: var(--surface-color);
     font-size: 22px;
     width: 40px;
@@ -45,21 +51,30 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right:20px;
+    margin-right: 20px;
     transition: .5s;
 }
-.social-links a:hover{
-background-color: var(--default-color);
+
+.social-links a:hover {
+    background-color: var(--default-color);
 }
-.social-links .email:hover{
+
+.social-links .email:hover {
     color: brown;
 }
-.social-links .git:hover{
+
+.social-links .git:hover {
     color: purple;
 }
-.social-links .linkedin:hover{
+
+.social-links .linkedin:hover {
     color: #0762C8;
 }
-.social-links .skype:hover{
+
+.social-links .skype:hover {
     color: #00ccff;
+}
+
+@media (max-width:320px) {
+
 }
