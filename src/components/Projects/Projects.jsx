@@ -11,10 +11,8 @@ const Projects = () => {
     <div className="container top-content" data-aos="fade-in" data-aos-duration="1000">
       <h1>Projects</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        facere ex quibusdam ipsum natus accusantium distinctio. Recusandae atque
-        velit inventore ad ullam maiores eius numquam error amet, placeat
-        soluta. Amet!
+      Developed interactive, user-focused applications using React and modern frontend technologies,
+       prioritizing responsiveness and smooth user experience.
       </p>
       <div className="projects-section" data-aos="fade-up" data-aos-duration="1000">
         <div className="projects-item" data-aos="fade-up" data-aos-duration="1000">

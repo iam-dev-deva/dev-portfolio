@@ -8,22 +8,23 @@ const Resume = () => {
   return (
     <div className='container top-content' data-aos="fade-in" data-aos-duration="1000">
       <h1>Resume</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis nam perferendis adipisci maiores non similique optio autem minus suscipit
-        , ab rem ullam quaerat, nisi itaque vel ad sunt voluptate.</p>
+      <p>"As a skilled developer, I specialize in Backend Development.
+         I'm passionate about creating efficient and scalable solutions that solve real-world problems."</p>
       <div className='resume container'>
         <div className="rows">
           <div className="column" data-aos="fade-up" data-aos-duration="1000">
             <h2>Summary</h2>
             <div className="column-data">
-              <h3 className="column-title">Deva</h3>
+              <h3 className="column-title">Devaraj</h3>
               <span>
-                Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
-                developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+              Experienced Backend Developer with 2+ years of experience in developing robust and scalable backend systems.
+               Proficient in NodeJS and database management systems [e.g., MySQL, PostgreSQL].
+               Skilled in API development, data modeling, and performance optimization.
               </span>
               <ul>
                 <li>Karur</li>
-                <li>123456789</li>
-                <li>deva@gmail.com</li>
+                <li>+91 8248277370</li>
+                <li>deva.arcee@gmail.com</li>
               </ul>
             </div>
           </div>
@@ -57,9 +58,9 @@ const Resume = () => {
               <span className='column-sub'>2022-present</span><br />
               <span className='column-sub'>karur</span>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, voluptatum culpa minus dignissimos minima quod</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores harum illum ad neque voluptatem</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum mollitia voluptatum minima iure labore laborum nihil quidem doloremque officiis minus iusto</li>
               </ul>
             </div>
           </div>

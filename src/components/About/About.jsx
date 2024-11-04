@@ -58,10 +58,7 @@ const About = () => {
       <div className="top-content" data-aos="fade-in" data-aos-duration="1000">
         <h1>About</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa qui,
-          consequuntur eius dolorem dolores animi. Natus similique, fugit ullam
-          quaerat at maiores id minima neque totam nam doloremque quia incidunt.
-        </p>
+        I am a highly skilled backend developer with 2 years of hands-on experience in building robust, scalable backend solutions. While my primary focus is backend development, I also possess a foundational understanding of frontend code, allowing me to collaborate effectively across the full stack.</p>
       {/* </div> */}
       </div>
 
@@ -85,17 +82,17 @@ const About = () => {
                     <li>
                       <BiChevronRight />
                       <b>BirthDay: </b>
-                      <span>1 April 2000</span>
+                      <span>23 December 2002</span>
                     </li>
                     <li>
                       <BiChevronRight />
                       <b>Website:</b>
-                      <span> deva.arcee@gmail.com</span>
+                      <span>iam-dev-deva.netlify.app</span>
                     </li>
                     <li>
                       <BiChevronRight />
                       <b>Phone:</b>
-                      <span> 9858500932</span>
+                      <span>+91 8248277370</span>
                     </li>
                   </ul>
                 </div>
@@ -103,7 +100,7 @@ const About = () => {
                   <ul className="row-data">
                     <li>
                       <BiChevronRight />
-                      <b>Age: </b> <span>20</span>
+                      <b>Age: </b> <span>22</span>
                     </li>
                     <li>
                       <BiChevronRight />
@@ -112,7 +109,7 @@ const About = () => {
                     </li>
                     <li>
                       <BiChevronRight />
-                      <b>Email:</b> <span>example@example.com</span>
+                      <b>Email:</b> <span>deva.arcee@gmail.com</span>
                     </li>
                   </ul>
                 </div>

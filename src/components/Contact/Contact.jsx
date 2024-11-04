@@ -46,10 +46,8 @@ const Contact = () => {
     <div className="container top-content" data-aos="fade-in" data-aos-duration="1000">
       <h1>Contact</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,
-        omnis? Quos, ea facere error repellat obcaecati mollitia aliquid nisi ut
-        sed aperiam, commodi nostrum facilis tenetur doloremque modi laboriosam
-        cum?
+      I'm always excited to connect! Whether you have a question about a project, want to discuss potential collaborations, or simply wish to reach out, feel free to contact me. 
+      I look forward to hearing from you and exploring how we can work together to create impactful solutions.
       </p>
       <div className="contact-section container" data-aos="fade-up" data-aos-duration="1000">
         <div className="contact-item">
