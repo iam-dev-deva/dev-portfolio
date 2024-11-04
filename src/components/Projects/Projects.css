@@ -1,4 +1,5 @@
 @import url("../../colors.css");
+
 .projects-section {
   display: flex;
   flex-wrap: wrap;
@@ -7,11 +8,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .projects-section .projects-item {
   text-align: center;
   margin: 15px 15px;
   position: relative;
 }
+
 .projects-item {
   position: relative;
   overflow: hidden;
@@ -45,6 +48,7 @@
   transition: all ease-in-out 0.3s;
   opacity: 1;
 }
+
 .projects-item .item-center {
   position: absolute;
   text-align: center;
@@ -53,14 +57,17 @@
   font-size: 25px;
   display: none;
 }
+
 .projects-item:hover .item-center {
   display: inline-block;
   transition: all ease-in-out 0.3s;
 }
+
 .projects-item:hover span {
   display: inline-block;
   transition: all ease-in-out 0.3s;
 }
+
 /* .item-center svg {
   margin: 0;
 } */
@@ -69,6 +76,7 @@
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
+
 .projects-item span {
   font-weight: 500;
   position: absolute;
@@ -77,4 +85,11 @@
   left: 20%;
   display: none;
   font-size: 20px;
+}
+
+@media (max-width:375px) {
+  .projects-item span {
+    top: 70%;
+  }
+  
 }

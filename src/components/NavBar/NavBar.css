@@ -84,7 +84,6 @@ ul .nav-item:hover{
         top: 0;
         right: 0;
         background: var(--surface-color);
-
         z-index: -1;
         width: 200px;
         padding-top: 70px;

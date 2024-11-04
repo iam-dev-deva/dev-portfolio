@@ -46,6 +46,7 @@
     margin: 5px 0px;
     font-size: 25px;
     float: left;
+    display: flex;
 }
 
 .social svg {
@@ -122,15 +123,33 @@
     background: var(--accent-color);
     width: 15%;
     border-radius: 20px;
-    font-size: 15px; 
+    font-size: 15px;
     border: 1px solid var(--accent-color);
 }
+
 .form-group .btn:hover {
     /* color: var(--contrast-color); */
     background: var(--contrast-color);
     transition: .3s;
     border: 1px solid var(--accent-color);
 }
-/* .contact-form .result{
 
-} */
+@media (max-width:1024px) {
+    .form-group input {
+        margin: 15px 5px;
+
+    }
+}
+@media (max-width:425px) {
+    .form-group input {
+        margin: 15px 5px;
+        width: 100%;
+    }
+    .form-group .btn {
+        width: 35%;
+    }
+    .contact-section{
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+}

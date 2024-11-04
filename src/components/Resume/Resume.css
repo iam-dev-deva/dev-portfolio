@@ -9,7 +9,7 @@
     float: left;
     text-align: left;
     width: 50%;
-    margin: 25px 0;
+    margin: 25px 25px;
 }
 
 .column .column-title {
@@ -56,4 +56,13 @@
 }
 .column-sub{
     padding: 10px 10px;
+}
+@media (max-width:425px) {
+    .resume{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .rows{
+        width: 100%;
+    }
 }
