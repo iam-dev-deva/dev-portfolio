@@ -56,7 +56,7 @@ const Contact = () => {
           </div>
           <div className="contact-info">
             <h4>Address</h4>
-            <span>A108 Adam Street, New York, NY 535022</span>
+            <span>Rayanoor Karur TamilNadu 639005</span>
           </div>
         </div>
 
