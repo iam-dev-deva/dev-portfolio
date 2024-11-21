@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./About.css";
 import { BiChevronRight, BiFile, BiLogoTailwindCss } from "react-icons/bi";
-import profile_img from "../../assets/profile-img.jpg";
+import profile_img from "../../assets/main-pro-2.jpg";
 import { GoProject } from "react-icons/go";
 import { GiSuitcase } from "react-icons/gi";
 import { CgCode } from "react-icons/cg";
@@ -79,11 +79,7 @@ const About = () => {
               <div className="bio-data-rows">
                 <div className="row">
                   <ul className="row-data">
-                    <li>
-                      <BiChevronRight />
-                      <b>BirthDay: </b>
-                      <span>23 December 2002</span>
-                    </li>
+                    
                     <li>
                       <BiChevronRight />
                       <b>Website:</b>
@@ -98,10 +94,7 @@ const About = () => {
                 </div>
                 <div className="row">
                   <ul className="row-data">
-                    <li>
-                      <BiChevronRight />
-                      <b>Age: </b> <span>22</span>
-                    </li>
+                    
                     <li>
                       <BiChevronRight />
                       <b>Degree:</b>
